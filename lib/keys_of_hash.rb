@@ -10,8 +10,10 @@ class Hash
           argument_string.to_n!
         end
         while n < keys.length
-          i = values.index(argument_string)
-          array << keys[i]
+          if values[n] == argument_string
+            i = values.index(argument_string)
+            array << keys[i]
+          end
           n+=1
         end
       else
