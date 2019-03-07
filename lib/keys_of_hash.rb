@@ -12,8 +12,8 @@ class Hash
         while n < keys.length
           if values[n] == argument_string
             binding.pry
-            i = values.index(argument_string)
-            array << keys[i]
+            
+            array << keys[n]
           end
           n+=1
         end
