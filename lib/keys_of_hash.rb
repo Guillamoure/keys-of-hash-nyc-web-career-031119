@@ -3,7 +3,7 @@ class Hash
   def keys_of(*arguments)
     array = []
       if arguments.length == 1
-        argument_string = arguments.join(", ")
+        argument_string = arguments.join
         
         if arguments[0].class == "num"
           argument_string.to_n!
