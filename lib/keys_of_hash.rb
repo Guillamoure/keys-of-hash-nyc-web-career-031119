@@ -7,9 +7,9 @@ class Hash
         binding.pry
         i = values.index(argument_string)
         
-        answer = keys[i]
+         array << keys[i]
         
       end
-    return answer
+    return array
   end
 end
