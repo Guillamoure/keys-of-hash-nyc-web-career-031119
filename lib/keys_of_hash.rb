@@ -4,6 +4,7 @@ class Hash
     array = []
       if arguments.length > 1
         argument_string = arguments.join(", ")
+        binding.pry
         i = values.index(argument_string)
         
         answer = keys[i]
