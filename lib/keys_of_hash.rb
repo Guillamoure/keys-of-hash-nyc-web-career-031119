@@ -4,10 +4,11 @@ class Hash
     array = []
       if arguments.length == 1
         argument_string = arguments.join(", ")
-        binding.pry
+        
         if arguments[0].class == "num"
           argument_string.to_n!
         end
+        binding.pry
         i = values.index(argument_string)
         
          array << keys[i]
