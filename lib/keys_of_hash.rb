@@ -4,14 +4,18 @@ class Hash
     array = []
       if arguments.length == 1
         argument_string = arguments.join
-        
+        n = 0
+         
         if arguments[0].class == "num"
           argument_string.to_n!
         end
+        while n < keys.length
+          i = values.index(argument_string)
+          array << keys[i]
+          n+=1
+        end
+      else
         
-        i = values.index(argument_string)
-        
-         array << keys[i]
         
       end
     return array
