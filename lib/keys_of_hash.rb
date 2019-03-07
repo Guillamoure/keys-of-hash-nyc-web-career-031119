@@ -11,6 +11,7 @@ class Hash
         end
         while n < keys.length
           if values[n] == argument_string
+            binding.pry
             i = values.index(argument_string)
             array << keys[i]
           end
